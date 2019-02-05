@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>TS</display-name>
+  <welcome-file-list>
+    <welcome-file>Frontpage.jsp</welcome-file>
+   </welcome-file-list>
+   
+    
+   <servlet>
+<servlet-name>insertqa</servlet-name>
+<servlet-class>timesheet.Qainsert</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>insertqa</servlet-name>
+<url-pattern>/qa</url-pattern>
+</servlet-mapping>
+
+   <servlet>
+<servlet-name>insertdev</servlet-name>
+<servlet-class>timesheet.Devinsert</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>insertdev</servlet-name>
+<url-pattern>/dev</url-pattern>
+</servlet-mapping>
+
+   <servlet>
+<servlet-name>insertman</servlet-name>
+<servlet-class>timesheet.Managinsert</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>insertman</servlet-name>
+<url-pattern>/management</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>searchqa</servlet-name>
+<servlet-class>timesheet.Searchingqa</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>searchqa</servlet-name>
+<url-pattern>/searchingqa</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>searchdev</servlet-name>
+<servlet-class>timesheet.Searchingdev</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>searchdev</servlet-name>
+<url-pattern>/searchingdev</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>searchmanag</servlet-name>
+<servlet-class>timesheet.Searchingmanag</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>searchmanag</servlet-name>
+<url-pattern>/searchingmanag</url-pattern>
+</servlet-mapping>
+      
+</web-app>
+

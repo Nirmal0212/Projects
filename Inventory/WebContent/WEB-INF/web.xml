@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Inventory</display-name>
+  <welcome-file-list>
+    <welcome-file>Frontpage.jsp</welcome-file>
+   
+  </welcome-file-list>
+  
+   
+   <servlet>
+<servlet-name>insertissue</servlet-name>
+<servlet-class>inventoryform.Issueinsert</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>insertissue</servlet-name>
+<url-pattern>/issueadding</url-pattern>
+</servlet-mapping>
+
+   <servlet>
+<servlet-name>insertreturn</servlet-name>
+<servlet-class>inventoryform.Returninsert</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>insertreturn</servlet-name>
+<url-pattern>/returnadding</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>searchissue</servlet-name>
+<servlet-class>inventoryform.Issuesearch</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>searchissue</servlet-name>
+<url-pattern>/issuesearching</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>searchreturn</servlet-name>
+<servlet-class>inventoryform.Returnsearch</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>searchreturn</servlet-name>
+<url-pattern>/returnsearching</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
